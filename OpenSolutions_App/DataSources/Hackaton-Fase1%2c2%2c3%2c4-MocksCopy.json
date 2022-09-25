@@ -1,0 +1,8 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_apiof2-5f678e1db6cea5b67d-5fe23bec5e486dcd27",
+    "Name": "Hackaton-Fase1,2,3,4-MocksCopy",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo"
+  }
+]

@@ -1,0 +1,103 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr81d_consultas",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr81d_consulta",
+    "MaxGetRowsCount": 500,
+    "Name": "Consultas",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Proprietário",
+      "cr81d_consulta_AsyncOperations": "Trabalhos do Sistema",
+      "cr81d_consulta_BulkDeleteFailures": "Falhas da Exclusão em Massa",
+      "cr81d_consulta_MailboxTrackingFolders": "Pastas de Acompanhamento Automático da Caixa de Correio",
+      "cr81d_consulta_PrincipalObjectAttributeAccesses": "Compartilhamento de Campo",
+      "cr81d_consulta_ProcessSession": "Sessões de Processo",
+      "cr81d_consulta_SyncErrors": "Erros de Sincronização",
+      "cr81d_consultaid": "Consulta",
+      "cr81d_datascustomerid": "customerId",
+      "cr81d_datascustomername": "customerName",
+      "cr81d_datasorganizationcnpj": "organizationCnpj",
+      "cr81d_datasorganizationid": "organizationId",
+      "cr81d_datasorganizationname": "organizationName",
+      "cr81d_nome": "Nome",
+      "createdby": "Criada Por",
+      "createdon": "Data de Criação",
+      "createdonbehalfby": "Criado por (Delegado)",
+      "importsequencenumber": "Número de Sequência de Importação",
+      "modifiedby": "Modificado Por",
+      "modifiedon": "Data de Modificação",
+      "modifiedonbehalfby": "Modificado por (Delegado)",
+      "new_ftperfil": "ftPerfil",
+      "new_ftperfilid": "new_ftPerfilId",
+      "new_saldoesg": "SaldoESG",
+      "overriddencreatedon": "Registro Criado em",
+      "owningbusinessunit": "Unidade de Negócios Proprietária",
+      "owningteam": "Equipe Proprietária",
+      "owninguser": "Usuário Proprietário",
+      "statecode": "Status",
+      "statuscode": "Razão do Status",
+      "timezoneruleversionnumber": "Número de Versão da Regra de Fuso Horário",
+      "utcconversiontimezonecode": "Código de Fuso Horário de Conversão de UTC",
+      "versionnumber": "Número da Versão"
+    },
+    "PreferredName": "Consultas",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Consultas (Modos de exibição)",
+    "Name": "_cr81d_consulta_views",
+    "RelatedEntityName": "Consultas",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "63e33555-98e0-4263-ad1c-386f9933f8fd": "Consultas Inativos(as)",
+      "cdef8dd8-8f3c-4f60-937e-b642ff61e9ef": "Exibição de Consulta de Consulta",
+      "cdf412ca-3de0-42be-a320-582255aa54c7": "Consultas Ativos(as)",
+      "d012f87c-fead-4961-92f2-2f1029093772": "Exibição Associada de Consulta",
+      "e6cdb4ea-13eb-4642-aaa7-f2797e5403db": "Exibição de Localização Avançada de Consulta"
+    }
+  },
+  {
+    "DisplayName": "Status (Consultas)",
+    "Name": "cr81d_consulta_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Ativo(a)",
+      "1": "Inativo(a)"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Consultas"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Consultas",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Razão do Status (Consultas)",
+    "Name": "cr81d_consulta_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Ativo(a)",
+      "2": "Inativo(a)"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Consultas"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Consultas",
+    "Type": "OptionSetInfo"
+  }
+]

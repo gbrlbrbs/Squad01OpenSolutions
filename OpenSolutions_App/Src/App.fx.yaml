@@ -1,0 +1,35 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |-
+        =ClearCollect(
+            colF2transacoesConta,
+            'Hackaton-Fase1,2,3,4-MocksCopy'.TransacoesDaConta(
+                "bd72458c-170d-48bc-bc2a-2f6738d347dc",
+                "69665991-da55-4aac-a1f2-32d23daba8fe",
+                "412.289.303-97"
+            ).data
+        );
+        ClearCollect(
+            colF2,
+            'Hackaton-Fase1,2,3,4-MocksCopy'.SaldosDaConta(
+                "bd72458c-170d-48bc-bc2a-2f6738d347dc",
+                "69665991-da55-4aac-a1f2-32d23daba8fe",
+                "412.289.303-97"
+            ).data
+        );
+        Set(
+            varPopup,
+            true
+        );
+        Set(
+            varSaldo,
+            Sum(
+                colF2transacoesConta,
+                amount*(0.015)
+            )
+        );
+        Set(
+            varSaldoContas,
+            First(colF2.availableAmount).availableAmount
+        )
+

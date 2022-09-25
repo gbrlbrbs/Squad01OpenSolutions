@@ -1,0 +1,25 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_cr81d_consulta_forms",
+      "Namespace": "Consultas (Formulários)",
+      "Values": {
+        "Informações": "1155eef7-ccbb-4735-810a-88030d01e39c"
+      }
+    },
+    {
+      "Kind": "default.cds_new_openfinancefase4b_forms",
+      "Namespace": "OpenFinanceFase4B (Formulários)",
+      "Values": {
+        "Informações": "2e6cbea4-c474-41d1-9c52-4b26ac02a3e5"
+      }
+    },
+    {
+      "Kind": "default.cds_new_arquivos_forms",
+      "Namespace": "Arquivos (Formulários)",
+      "Values": {
+        "Informações": "c87290fd-cd90-4ced-a8e5-ac8629384258"
+      }
+    }
+  ]
+}

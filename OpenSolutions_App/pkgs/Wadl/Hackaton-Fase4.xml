@@ -1,0 +1,208 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://unitedstates-002.azure-apim.net/apim/apiof4-5f678e1db6cea5b67d-5fe23bec5e486dcd27" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="Hackaton-Fase4" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="Hackaton - Fase 4">Hackaton - Fase 4</doc>
+  <grammars>
+    <jsonTypes targetNamespace="https://unitedstates-002.azure-apim.net/apim/apiof4-5f678e1db6cea5b67d-5fe23bec5e486dcd27" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <string name="ListaDeFundos_responses_default_def_items_def_participant_def_brand_def" />
+      <string name="ListaDeFundos_responses_default_def_items_def_participant_def_name_def" />
+      <string name="ListaDeFundos_responses_default_def_items_def_participant_def_cnpjNumber_def" />
+      <string name="ListaDeFundos_responses_default_def_items_def_participant_def_urlComplementaryList_def" />
+      <object name="ListaDeFundos_responses_default_def_items_def_participant_def">
+        <property name="brand" type="string" />
+        <property name="name" type="string" />
+        <property name="cnpjNumber" type="string" />
+        <property name="urlComplementaryList" type="string" />
+      </object>
+      <string name="ListaDeFundos_responses_default_def_items_def_name_def" />
+      <string name="ListaDeFundos_responses_default_def_items_def_cnpjNumber_def" />
+      <string name="ListaDeFundos_responses_default_def_items_def_isinCode_def" />
+      <string name="ListaDeFundos_responses_default_def_items_def_admin_def_name_def" />
+      <string name="ListaDeFundos_responses_default_def_items_def_admin_def_cnpjNumber_def" />
+      <object name="ListaDeFundos_responses_default_def_items_def_admin_def">
+        <property name="name" type="string" />
+        <property name="cnpjNumber" type="string" />
+      </object>
+      <string name="ListaDeFundos_responses_default_def_items_def_fundManager_def_name_def" />
+      <string name="ListaDeFundos_responses_default_def_items_def_fundManager_def_cnpjNumber_def" />
+      <object name="ListaDeFundos_responses_default_def_items_def_fundManager_def">
+        <property name="name" type="string" />
+        <property name="cnpjNumber" type="string" />
+      </object>
+      <string name="ListaDeFundos_responses_default_def_items_def_anbimaCategory_def" />
+      <string name="ListaDeFundos_responses_default_def_items_def_fees_def_maxAdminFee_def" />
+      <string name="ListaDeFundos_responses_default_def_items_def_fees_def_entryFee_def" />
+      <string name="ListaDeFundos_responses_default_def_items_def_fees_def_performanceFee_def_method_def" />
+      <string name="ListaDeFundos_responses_default_def_items_def_fees_def_performanceFee_def_benchmark_def" />
+      <string name="ListaDeFundos_responses_default_def_items_def_fees_def_performanceFee_def_benchmarkAdditionalInfo_def" />
+      <string name="ListaDeFundos_responses_default_def_items_def_fees_def_performanceFee_def_amount_def" />
+      <object name="ListaDeFundos_responses_default_def_items_def_fees_def_performanceFee_def">
+        <property name="method" type="string" />
+        <property name="benchmark" type="string" />
+        <property name="benchmarkAdditionalInfo" type="string" />
+        <property name="amount" type="string" />
+      </object>
+      <string name="ListaDeFundos_responses_default_def_items_def_fees_def_exitFee_def" />
+      <object name="ListaDeFundos_responses_default_def_items_def_fees_def">
+        <property name="maxAdminFee" type="string" />
+        <property name="entryFee" type="string" />
+        <property name="performanceFee" typeRef="ListaDeFundos_responses_default_def_items_def_fees_def_performanceFee_def" />
+        <property name="exitFee" type="string" />
+      </object>
+      <string name="ListaDeFundos_responses_default_def_items_def_generalConditions_def_minimumAmount_def_value_def" />
+      <string name="ListaDeFundos_responses_default_def_items_def_generalConditions_def_minimumAmount_def_currency_def" />
+      <object name="ListaDeFundos_responses_default_def_items_def_generalConditions_def_minimumAmount_def">
+        <property name="value" type="string" />
+        <property name="currency" type="string" />
+      </object>
+      <integer name="ListaDeFundos_responses_default_def_items_def_generalConditions_def_redemption_def_quotationDays_def" />
+      <string name="ListaDeFundos_responses_default_def_items_def_generalConditions_def_redemption_def_quotationTerm_def" />
+      <integer name="ListaDeFundos_responses_default_def_items_def_generalConditions_def_redemption_def_paymentDays_def" />
+      <string name="ListaDeFundos_responses_default_def_items_def_generalConditions_def_redemption_def_paymentTerm_def" />
+      <integer name="ListaDeFundos_responses_default_def_items_def_generalConditions_def_redemption_def_graceDays_def" />
+      <object name="ListaDeFundos_responses_default_def_items_def_generalConditions_def_redemption_def">
+        <property name="quotationDays" type="integer" />
+        <property name="quotationTerm" type="string" />
+        <property name="paymentDays" type="integer" />
+        <property name="paymentTerm" type="string" />
+        <property name="graceDays" type="integer" />
+      </object>
+      <integer name="ListaDeFundos_responses_default_def_items_def_generalConditions_def_application_def_quotationDays_def" />
+      <string name="ListaDeFundos_responses_default_def_items_def_generalConditions_def_application_def_quotationTerm_def" />
+      <object name="ListaDeFundos_responses_default_def_items_def_generalConditions_def_application_def">
+        <property name="quotationDays" type="integer" />
+        <property name="quotationTerm" type="string" />
+      </object>
+      <string name="ListaDeFundos_responses_default_def_items_def_generalConditions_def_fundQuotaType_def" />
+      <object name="ListaDeFundos_responses_default_def_items_def_generalConditions_def">
+        <property name="minimumAmount" typeRef="ListaDeFundos_responses_default_def_items_def_generalConditions_def_minimumAmount_def" />
+        <property name="redemption" typeRef="ListaDeFundos_responses_default_def_items_def_generalConditions_def_redemption_def" />
+        <property name="application" typeRef="ListaDeFundos_responses_default_def_items_def_generalConditions_def_application_def" />
+        <property name="fundQuotaType" type="string" />
+      </object>
+      <string name="ListaDeFundos_responses_default_def_items_def_taxation_def" />
+      <object name="ListaDeFundos_responses_default_def_items_def">
+        <property name="participant" typeRef="ListaDeFundos_responses_default_def_items_def_participant_def" />
+        <property name="name" type="string" />
+        <property name="cnpjNumber" type="string" />
+        <property name="isinCode" type="string" />
+        <property name="admin" typeRef="ListaDeFundos_responses_default_def_items_def_admin_def" />
+        <property name="fundManager" typeRef="ListaDeFundos_responses_default_def_items_def_fundManager_def" />
+        <property name="anbimaCategory" type="string" />
+        <property name="fees" typeRef="ListaDeFundos_responses_default_def_items_def_fees_def" />
+        <property name="generalConditions" typeRef="ListaDeFundos_responses_default_def_items_def_generalConditions_def" />
+        <property name="taxation" type="string" />
+      </object>
+      <array typeRef="ListaDeFundos_responses_default_def_items_def" name="ListaDeFundos_responses_default_def" />
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://unitedstates-002.azure-apim.net/apim/apiof4-5f678e1db6cea5b67d-5fe23bec5e486dcd27">
+    <resource path="/{connectionId}/opendata-exchange/v1/online-rates">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="CambioParaTaxaOnline" actionName="CambioParaTaxaOnline" siena:isDeprecated="false">
+        <doc title="Câmbio para Taxa Online&#xA;Câmbio para Taxa Online" />
+        <request />
+      </method>
+    </resource>
+    <resource path="/{connectionId}/opendata-exchange/v1/vet-values">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="CambioParaValorVet" actionName="CambioParaValorVet" siena:isDeprecated="false">
+        <doc title="Câmbio para valor VET&#xA;Câmbio para valor VET" />
+        <request />
+      </method>
+    </resource>
+    <resource path="/{connectionId}/opendata-investments/v1/funds">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="ListaDeFundos" actionName="ListaDeFundos" siena:isDeprecated="false">
+        <doc title="Lista de fundos&#xA;Lista de fundos" />
+        <request />
+        <response>
+          <representation mediaType="application/json" element="service:ListaDeFundos_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/opendata-investments/v1/bank-fixed-incomes">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="RendaFixaBancaria" actionName="RendaFixaBancaria" siena:isDeprecated="false">
+        <doc title="Renda Fixa Bancária&#xA;Renda Fixa Bancária" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/opendata-investments/v1/credit-fixed-incomes">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="RendaFixaCredito" actionName="RendaFixaCredito" siena:isDeprecated="false">
+        <doc title="Renda Fixa Crédito&#xA;Renda Fixa Crédito" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/opendata-investments/v1/treasure-titles">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="TitulosDoTesouroDireto" actionName="TitulosDoTesouroDireto" siena:isDeprecated="false">
+        <doc title="Títulos do Tesouro Direto&#xA;Títulos do Tesouro Direto" />
+        <request />
+      </method>
+    </resource>
+    <resource path="/{connectionId}/opendata-investments/v1/variable-incomes">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="RendaVariavel" actionName="RendaVariavel" siena:isDeprecated="false">
+        <doc title="Renda Variável&#xA;Renda Variável" />
+        <request />
+      </method>
+    </resource>
+    <resource path="/{connectionId}/opendata-pension/v1/risk-coverages">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="CoberturasDeRiscos" actionName="CoberturasDeRiscos" siena:isDeprecated="false">
+        <doc title="Coberturas de Riscos&#xA;Coberturas de Riscos" />
+        <request />
+      </method>
+    </resource>
+    <resource path="/{connectionId}/opendata-pension/v1/survival-coverages">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="CoberturasDeSobrevivencia" actionName="CoberturasDeSobrevivencia" siena:isDeprecated="false">
+        <doc title="Coberturas de Sobrevivência&#xA;Coberturas de Sobrevivência" />
+        <request />
+      </method>
+    </resource>
+    <resource path="/{connectionId}/opendata-insurance/v1/automotives">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="Automotivos" actionName="Automotivos" siena:isDeprecated="false">
+        <doc title="Automotivos&#xA;Automotivos" />
+        <request />
+      </method>
+    </resource>
+    <resource path="/{connectionId}/opendata-insurance/v1/homes">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="Residenciais" actionName="Residenciais" siena:isDeprecated="false">
+        <doc title="Residenciais&#xA;Residenciais" />
+        <request />
+      </method>
+    </resource>
+    <resource path="/{connectionId}/opendata-insurance/v1/personals">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="Pessoais" actionName="Pessoais" siena:isDeprecated="false">
+        <doc title="Pessoais&#xA;Pessoais" />
+        <request />
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="shared_apiof4-5f678e1db6cea5b67d-5fe23bec5e486dcd27" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>

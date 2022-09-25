@@ -1,0 +1,8 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_apiof4-5f678e1db6cea5b67d-5fe23bec5e486dcd27",
+    "Name": "Hackaton-Fase4",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo"
+  }
+]

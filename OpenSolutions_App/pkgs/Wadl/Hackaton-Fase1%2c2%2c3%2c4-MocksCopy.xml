@@ -1,0 +1,559 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://unitedstates-002.azure-apim.net/apim/apiof2-5f678e1db6cea5b67d-5fe23bec5e486dcd27" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="Hackaton-Fase1,2,3,4-MocksCopy" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="Hackaton - Fase 1, 2, 3, 4 - Mocks Copy">Hackaton - 2</doc>
+  <grammars>
+    <jsonTypes targetNamespace="https://unitedstates-002.azure-apim.net/apim/apiof2-5f678e1db6cea5b67d-5fe23bec5e486dcd27" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <string name="IdentificacaoPessoaNatural_responses_default_def_data_def_accountId_def" />
+      <string name="IdentificacaoPessoaNatural_responses_default_def_data_def_customerId_def" />
+      <string name="IdentificacaoPessoaNatural_responses_default_def_data_def_organizationId_def" />
+      <string name="IdentificacaoPessoaNatural_responses_default_def_data_def_organizationName_def" />
+      <number name="IdentificacaoPessoaNatural_responses_default_def_data_def_availableAmount_def" />
+      <string name="IdentificacaoPessoaNatural_responses_default_def_data_def_availableAmountCurrency_def" />
+      <integer name="IdentificacaoPessoaNatural_responses_default_def_data_def_blockedAmount_def" />
+      <string name="IdentificacaoPessoaNatural_responses_default_def_data_def_blockedAmountCurrency_def" />
+      <integer name="IdentificacaoPessoaNatural_responses_default_def_data_def_automaticallyInvestedAmount_def" />
+      <string name="IdentificacaoPessoaNatural_responses_default_def_data_def_automaticallyInvestedAmountCurrency_def" />
+      <object name="IdentificacaoPessoaNatural_responses_default_def_data_def">
+        <property name="accountId" type="string" />
+        <property name="customerId" type="string" />
+        <property name="organizationId" type="string" />
+        <property name="organizationName" type="string" />
+        <property name="availableAmount" type="number" />
+        <property name="availableAmountCurrency" type="string" />
+        <property name="blockedAmount" type="integer" />
+        <property name="blockedAmountCurrency" type="string" />
+        <property name="automaticallyInvestedAmount" type="integer" />
+        <property name="automaticallyInvestedAmountCurrency" type="string" />
+      </object>
+      <string name="IdentificacaoPessoaNatural_responses_default_def_links_def_self_def" />
+      <object name="IdentificacaoPessoaNatural_responses_default_def_links_def">
+        <property name="self" type="string" />
+      </object>
+      <integer name="IdentificacaoPessoaNatural_responses_default_def_meta_def_totalRecords_def" />
+      <integer name="IdentificacaoPessoaNatural_responses_default_def_meta_def_totalPages_def" />
+      <string name="IdentificacaoPessoaNatural_responses_default_def_meta_def_requestDateTime_def" />
+      <object name="IdentificacaoPessoaNatural_responses_default_def_meta_def">
+        <property name="totalRecords" type="integer" />
+        <property name="totalPages" type="integer" />
+        <property name="requestDateTime" type="string" />
+      </object>
+      <object name="IdentificacaoPessoaNatural_responses_default_def">
+        <property name="data" typeRef="IdentificacaoPessoaNatural_responses_default_def_data_def" />
+        <property name="links" typeRef="IdentificacaoPessoaNatural_responses_default_def_links_def" />
+        <property name="meta" typeRef="IdentificacaoPessoaNatural_responses_default_def_meta_def" />
+      </object>
+      <string name="ListaDeContas_responses_default_def_data_def_items_def_accountId_def" />
+      <string name="ListaDeContas_responses_default_def_data_def_items_def_customerId_def" />
+      <string name="ListaDeContas_responses_default_def_data_def_items_def_organizationId_def" />
+      <string name="ListaDeContas_responses_default_def_data_def_items_def_organizationName_def" />
+      <string name="ListaDeContas_responses_default_def_data_def_items_def_brandName_def" />
+      <string name="ListaDeContas_responses_default_def_data_def_items_def_companyCnpj_def" />
+      <string name="ListaDeContas_responses_default_def_data_def_items_def_type_def" />
+      <string name="ListaDeContas_responses_default_def_data_def_items_def_compeCode_def" />
+      <string name="ListaDeContas_responses_default_def_data_def_items_def_branchCode_def" />
+      <string name="ListaDeContas_responses_default_def_data_def_items_def_number_def" />
+      <integer name="ListaDeContas_responses_default_def_data_def_items_def_checkDigit_def" />
+      <object name="ListaDeContas_responses_default_def_data_def_items_def">
+        <property name="accountId" type="string" />
+        <property name="customerId" type="string" />
+        <property name="organizationId" type="string" />
+        <property name="organizationName" type="string" />
+        <property name="brandName" type="string" />
+        <property name="companyCnpj" type="string" />
+        <property name="type" type="string" />
+        <property name="compeCode" type="string" />
+        <property name="branchCode" type="string" />
+        <property name="number" type="string" />
+        <property name="checkDigit" type="integer" />
+      </object>
+      <array typeRef="ListaDeContas_responses_default_def_data_def_items_def" name="ListaDeContas_responses_default_def_data_def" />
+      <string name="ListaDeContas_responses_default_def_links_def_self_def" />
+      <object name="ListaDeContas_responses_default_def_links_def">
+        <property name="self" type="string" />
+      </object>
+      <integer name="ListaDeContas_responses_default_def_meta_def_totalRecords_def" />
+      <integer name="ListaDeContas_responses_default_def_meta_def_totalPages_def" />
+      <string name="ListaDeContas_responses_default_def_meta_def_requestDateTime_def" />
+      <object name="ListaDeContas_responses_default_def_meta_def">
+        <property name="totalRecords" type="integer" />
+        <property name="totalPages" type="integer" />
+        <property name="requestDateTime" type="string" />
+      </object>
+      <object name="ListaDeContas_responses_default_def">
+        <property name="data" typeRef="ListaDeContas_responses_default_def_data_def" />
+        <property name="links" typeRef="ListaDeContas_responses_default_def_links_def" />
+        <property name="meta" typeRef="ListaDeContas_responses_default_def_meta_def" />
+      </object>
+      <string name="SaldosDaConta_responses_default_def_data_def_accountId_def" />
+      <string name="SaldosDaConta_responses_default_def_data_def_customerId_def" />
+      <string name="SaldosDaConta_responses_default_def_data_def_organizationId_def" />
+      <string name="SaldosDaConta_responses_default_def_data_def_organizationName_def" />
+      <number name="SaldosDaConta_responses_default_def_data_def_availableAmount_def" />
+      <string name="SaldosDaConta_responses_default_def_data_def_availableAmountCurrency_def" />
+      <integer name="SaldosDaConta_responses_default_def_data_def_blockedAmount_def" />
+      <string name="SaldosDaConta_responses_default_def_data_def_blockedAmountCurrency_def" />
+      <integer name="SaldosDaConta_responses_default_def_data_def_automaticallyInvestedAmount_def" />
+      <string name="SaldosDaConta_responses_default_def_data_def_automaticallyInvestedAmountCurrency_def" />
+      <object name="SaldosDaConta_responses_default_def_data_def">
+        <property name="accountId" type="string" />
+        <property name="customerId" type="string" />
+        <property name="organizationId" type="string" />
+        <property name="organizationName" type="string" />
+        <property name="availableAmount" type="number" />
+        <property name="availableAmountCurrency" type="string" />
+        <property name="blockedAmount" type="integer" />
+        <property name="blockedAmountCurrency" type="string" />
+        <property name="automaticallyInvestedAmount" type="integer" />
+        <property name="automaticallyInvestedAmountCurrency" type="string" />
+      </object>
+      <string name="SaldosDaConta_responses_default_def_links_def_self_def" />
+      <object name="SaldosDaConta_responses_default_def_links_def">
+        <property name="self" type="string" />
+      </object>
+      <integer name="SaldosDaConta_responses_default_def_meta_def_totalRecords_def" />
+      <integer name="SaldosDaConta_responses_default_def_meta_def_totalPages_def" />
+      <string name="SaldosDaConta_responses_default_def_meta_def_requestDateTime_def" />
+      <object name="SaldosDaConta_responses_default_def_meta_def">
+        <property name="totalRecords" type="integer" />
+        <property name="totalPages" type="integer" />
+        <property name="requestDateTime" type="string" />
+      </object>
+      <object name="SaldosDaConta_responses_default_def">
+        <property name="data" typeRef="SaldosDaConta_responses_default_def_data_def" />
+        <property name="links" typeRef="SaldosDaConta_responses_default_def_links_def" />
+        <property name="meta" typeRef="SaldosDaConta_responses_default_def_meta_def" />
+      </object>
+      <string name="TransacoesDaConta_responses_default_def_data_def_items_def_accountId_def" />
+      <string name="TransacoesDaConta_responses_default_def_data_def_items_def_customerId_def" />
+      <string name="TransacoesDaConta_responses_default_def_data_def_items_def_organizationId_def" />
+      <string name="TransacoesDaConta_responses_default_def_data_def_items_def_organizationName_def" />
+      <string name="TransacoesDaConta_responses_default_def_data_def_items_def_transactionId_def" />
+      <string name="TransacoesDaConta_responses_default_def_data_def_items_def_completedAuthorisedPaymentType_def" />
+      <string name="TransacoesDaConta_responses_default_def_data_def_items_def_creditDebitType_def" />
+      <string name="TransacoesDaConta_responses_default_def_data_def_items_def_transactionName_def" />
+      <string name="TransacoesDaConta_responses_default_def_data_def_items_def_type_def" />
+      <number name="TransacoesDaConta_responses_default_def_data_def_items_def_amount_def" />
+      <string name="TransacoesDaConta_responses_default_def_data_def_items_def_transactionCurrency_def" />
+      <string name="TransacoesDaConta_responses_default_def_data_def_items_def_transactionDate_def" />
+      <string name="TransacoesDaConta_responses_default_def_data_def_items_def_partieCnpjCpf_def" />
+      <string name="TransacoesDaConta_responses_default_def_data_def_items_def_partiePersonType_def" />
+      <string name="TransacoesDaConta_responses_default_def_data_def_items_def_partieCompeCode_def" />
+      <string name="TransacoesDaConta_responses_default_def_data_def_items_def_partieBranchCode_def" />
+      <string name="TransacoesDaConta_responses_default_def_data_def_items_def_partieNumber_def" />
+      <string name="TransacoesDaConta_responses_default_def_data_def_items_def_partieCheckDigit_def" />
+      <object name="TransacoesDaConta_responses_default_def_data_def_items_def">
+        <property name="accountId" type="string" />
+        <property name="customerId" type="string" />
+        <property name="organizationId" type="string" />
+        <property name="organizationName" type="string" />
+        <property name="transactionId" type="string" />
+        <property name="completedAuthorisedPaymentType" type="string" />
+        <property name="creditDebitType" type="string" />
+        <property name="transactionName" type="string" />
+        <property name="type" type="string" />
+        <property name="amount" type="number" />
+        <property name="transactionCurrency" type="string" />
+        <property name="transactionDate" type="string" />
+        <property name="partieCnpjCpf" type="string" />
+        <property name="partiePersonType" type="string" />
+        <property name="partieCompeCode" type="string" />
+        <property name="partieBranchCode" type="string" />
+        <property name="partieNumber" type="string" />
+        <property name="partieCheckDigit" type="string" />
+      </object>
+      <array typeRef="TransacoesDaConta_responses_default_def_data_def_items_def" name="TransacoesDaConta_responses_default_def_data_def" />
+      <string name="TransacoesDaConta_responses_default_def_links_def_self_def" />
+      <object name="TransacoesDaConta_responses_default_def_links_def">
+        <property name="self" type="string" />
+      </object>
+      <integer name="TransacoesDaConta_responses_default_def_meta_def_totalRecords_def" />
+      <integer name="TransacoesDaConta_responses_default_def_meta_def_totalPages_def" />
+      <string name="TransacoesDaConta_responses_default_def_meta_def_requestDateTime_def" />
+      <object name="TransacoesDaConta_responses_default_def_meta_def">
+        <property name="totalRecords" type="integer" />
+        <property name="totalPages" type="integer" />
+        <property name="requestDateTime" type="string" />
+      </object>
+      <object name="TransacoesDaConta_responses_default_def">
+        <property name="data" typeRef="TransacoesDaConta_responses_default_def_data_def" />
+        <property name="links" typeRef="TransacoesDaConta_responses_default_def_links_def" />
+        <property name="meta" typeRef="TransacoesDaConta_responses_default_def_meta_def" />
+      </object>
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://unitedstates-002.azure-apim.net/apim/apiof2-5f678e1db6cea5b67d-5fe23bec5e486dcd27">
+    <resource path="/{connectionId}/customers/v1/personal/identifications">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="IdentificacaoPessoaNatural" actionName="IdentificacaoPessoaNatural" siena:isDeprecated="false">
+        <doc title="Identificação pessoa natural&#xA;Identificação pessoa natural" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:IdentificacaoPessoaNatural_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/customers/v1/personal/financial-relations">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="QualificacaoPessoaNatural" actionName="QualificacaoPessoaNatural" siena:isDeprecated="false">
+        <doc title="Qualificação pessoa natural&#xA;Qualificação pessoa natural" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/customers/v1/personal/qualifications">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="RelacionamentoPessoaNatural" actionName="RelacionamentoPessoaNatural" siena:isDeprecated="false">
+        <doc title="Relacionamento pessoa natural&#xA;Relacionamento pessoa natural" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/accounts/v1/accounts">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="ListaDeContas" actionName="ListaDeContas" siena:isDeprecated="false">
+        <doc title="Lista de contas&#xA;Lista de contas" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:ListaDeContas_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/accounts/v1/accounts/{id}">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="id" type="xs:string" required="true" default="dc728105-74a5-47fe-b18c-23a6c855ed30" />
+      <method siena:requiresAuthentication="true" name="GET" id="IdentificacaoDaConta" actionName="IdentificacaoDaConta" siena:isDeprecated="false">
+        <doc title="Identificação da conta&#xA;Identificação da conta" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/accounts/v1/accounts/{accountId}/balances">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="accountId" type="xs:string" required="true" default="dc728105-74a5-47fe-b18c-23a6c855ed30" />
+      <method siena:requiresAuthentication="true" name="GET" id="SaldosDaConta" actionName="SaldosDaConta" siena:isDeprecated="false">
+        <doc title="Saldos da conta&#xA;Saldos da conta" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:SaldosDaConta_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/accounts/v1/accounts/{accountId}/transactions">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="accountId" type="xs:string" required="true" default="dc728105-74a5-47fe-b18c-23a6c855ed30" />
+      <method siena:requiresAuthentication="true" name="GET" id="TransacoesDaConta" actionName="TransacoesDaConta" siena:isDeprecated="false">
+        <doc title="Transações da conta&#xA;Transações da conta" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:TransacoesDaConta_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/accounts/v1/accounts/{accountId}/overdraft-limits">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="accountId" type="xs:string" required="true" default="dc728105-74a5-47fe-b18c-23a6c855ed30" />
+      <method siena:requiresAuthentication="true" name="GET" id="LimitesDaConta" actionName="LimitesDaConta" siena:isDeprecated="false">
+        <doc title="Limites da conta&#xA;Limites da conta" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/credit-cards-accounts/v1/accounts">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="ListaDeCartoes" actionName="ListaDeCartoes" siena:isDeprecated="false">
+        <doc title="Lista de cartões&#xA;Lista de cartões" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/credit-cards-accounts/v1/accounts/{creditCardAccountId}">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="creditCardAccountId" type="xs:string" required="true" default="0b899b56-2f36-46c4-a594-b2a921f45575" />
+      <method siena:requiresAuthentication="true" name="GET" id="IdentificacaoDeCartao" actionName="IdentificacaoDeCartao" siena:isDeprecated="false">
+        <doc title="Identificação de cartão&#xA;Identificação de cartão" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/credit-cards-accounts/v1/accounts/{creditCardAccountId}/transactions">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="creditCardAccountId" type="xs:string" required="true" default="0b899b56-2f36-46c4-a594-b2a921f45575" />
+      <method siena:requiresAuthentication="true" name="GET" id="TransacoesDeCartao" actionName="TransacoesDeCartao" siena:isDeprecated="false">
+        <doc title="Transações de cartão&#xA;Transações de cartão" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/credit-cards-accounts/v1/accounts/{creditCardAccountId}/bills">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="creditCardAccountId" type="xs:string" required="true" default="0b899b56-2f36-46c4-a594-b2a921f45575" />
+      <method siena:requiresAuthentication="true" name="GET" id="FaturaDeCartao" actionName="FaturaDeCartao" siena:isDeprecated="false">
+        <doc title="Fatura de cartão&#xA;Fatura de cartão" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/credit-cards-accounts/v1/accounts/{creditCardAccountId}/bills/{billId}/transactions">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="creditCardAccountId" type="xs:string" required="true" default="0b899b56-2f36-46c4-a594-b2a921f45575" />
+      <param style="template" name="billId" type="xs:string" required="true" default="0696d2cf-58fd-4507-bff2-aa2649f87df9" />
+      <method siena:requiresAuthentication="true" name="GET" id="TransacoesDeCartaoPorFatura" actionName="TransacoesDeCartaoPorFatura" siena:isDeprecated="false">
+        <doc title="Transações de cartão por fatura&#xA;Transações de cartão por fatura" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/credit-cards-accounts/v1/accounts/{creditCardAccountId}/limits">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="creditCardAccountId" type="xs:string" required="true" default="0b899b56-2f36-46c4-a594-b2a921f45575" />
+      <method siena:requiresAuthentication="true" name="GET" id="LimitesDeCartao" actionName="LimitesDeCartao" siena:isDeprecated="false">
+        <doc title="Limites de cartão&#xA;Limites de cartão" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/loans/v1/contracts">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="ListaDeEmprestimos" actionName="ListaDeEmprestimos" siena:isDeprecated="false">
+        <doc title="Lista de empréstimos&#xA;Lista de empréstimos" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/loans/v1/contracts/{contractId}">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="contractId" type="xs:string" required="true" default="6d0b40b6-0cf1-4222-ac11-6d090e0f69e3" />
+      <method siena:requiresAuthentication="true" name="GET" id="IdentificacaoDeEmprestimos" actionName="IdentificacaoDeEmprestimos" siena:isDeprecated="false">
+        <doc title="Identificação de empréstimos&#xA;Identificação de empréstimos" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/loans/v1/contracts/{contractId}/warranties">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="contractId" type="xs:string" required="true" default="6d0b40b6-0cf1-4222-ac11-6d090e0f69e3" />
+      <method siena:requiresAuthentication="true" name="GET" id="GarantiaDeEmprestimos" actionName="GarantiaDeEmprestimos" siena:isDeprecated="false">
+        <doc title="Garantia de empréstimos&#xA;Garantia de empréstimos" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/loans/v1/contracts/{contractId}/scheduled-instalments">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="contractId" type="xs:string" required="true" default="6d0b40b6-0cf1-4222-ac11-6d090e0f69e3" />
+      <method siena:requiresAuthentication="true" name="GET" id="ParcelasDeEmprestimos" actionName="ParcelasDeEmprestimos" siena:isDeprecated="false">
+        <doc title="Parcelas de empréstimos&#xA;Parcelas de empréstimos" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/loans/v1/contracts/{contractId}/payments">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="contractId" type="xs:string" required="true" default="6d0b40b6-0cf1-4222-ac11-6d090e0f69e3" />
+      <method siena:requiresAuthentication="true" name="GET" id="PagamentosDeEmprestimos" actionName="PagamentosDeEmprestimos" siena:isDeprecated="false">
+        <doc title="Pagamentos de empréstimos&#xA;Pagamentos de empréstimos" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/financings/v1/contracts">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="ListaDeFinanciamentos" actionName="ListaDeFinanciamentos" siena:isDeprecated="false">
+        <doc title="Lista de financiamentos&#xA;Lista de financiamentos" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/financings/v1/contracts/{contractId}">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="contractId" type="xs:string" required="true" default="c194d903-fca1-497f-b5f3-0204e426e798" />
+      <method siena:requiresAuthentication="true" name="GET" id="IdentificacaoDeFinanciamentos" actionName="IdentificacaoDeFinanciamentos" siena:isDeprecated="false">
+        <doc title="Identificação de financiamentos&#xA;Identificação de financiamentos" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/financings/v1/contracts/{contractId}/warranties">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="contractId" type="xs:string" required="true" default="c194d903-fca1-497f-b5f3-0204e426e798" />
+      <method siena:requiresAuthentication="true" name="GET" id="GarantiaDeFinanciamentos" actionName="GarantiaDeFinanciamentos" siena:isDeprecated="false">
+        <doc title="Garantia de financiamentos&#xA;Garantia de financiamentos" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/financings/v1/contracts/{contractId}/scheduled-instalments">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="contractId" type="xs:string" required="true" default="c194d903-fca1-497f-b5f3-0204e426e798" />
+      <method siena:requiresAuthentication="true" name="GET" id="ParcelasDeFinanciamentos" actionName="ParcelasDeFinanciamentos" siena:isDeprecated="false">
+        <doc title="Parcelas de financiamentos&#xA;Parcelas de financiamentos" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/financings/v1/contracts/{contractId}/payments">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="contractId" type="xs:string" required="true" default="c194d903-fca1-497f-b5f3-0204e426e798" />
+      <method siena:requiresAuthentication="true" name="GET" id="PagamentosDeFinanciamentos" actionName="PagamentosDeFinanciamentos" siena:isDeprecated="false">
+        <doc title="Pagamentos de financiamentos&#xA;Pagamentos de financiamentos" />
+        <request>
+          <param style="header" name="organizationid" type="xs:string" required="true" default="69665991-da55-4aac-a1f2-32d23daba8fe">
+            <doc title="organizationid" />
+          </param>
+          <param style="header" name="customerid" type="xs:string" required="true" default="595.080.896-84">
+            <doc title="customerid" />
+          </param>
+        </request>
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="shared_apiof2-5f678e1db6cea5b67d-5fe23bec5e486dcd27" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>
