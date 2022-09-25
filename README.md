@@ -10,7 +10,11 @@ A apresentação está no arquivo `OpenSolutions_Apresentacao.pdf`.
 
 ## Vídeo
 
-O vídeo foi enviado ao YouTube e [está disponível neste link](https://www.youtube.com/watch?v=07AB0I5yPC0)
+O vídeo foi enviado ao YouTube e [está disponível neste link](https://www.youtube.com/watch?v=07AB0I5yPC0).
+
+## Case Secreto
+
+O case secreto está no arquivo `CaseSecreto_OpenSolutions.pdf`.
 
 ## Acessando a aplicação
 
