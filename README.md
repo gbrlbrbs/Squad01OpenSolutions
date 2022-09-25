@@ -4,6 +4,14 @@ Submissão da Squad 01 - OpenSolutions para o Hackathon Open Finance do BTG Pact
 
 #btgfaztech
 
+## Apresentação
+
+A apresentação está no arquivo `OpenSolutions_Apresentacao.pdf`.
+
+## Vídeo
+
+O vídeo foi enviado ao YouTube e [está disponível neste link](https://www.youtube.com/watch?v=07AB0I5yPC0)
+
 ## Acessando a aplicação
 
 Para acessar o app OpenSolutions, será necessário a importação da solução no ambiente PowerPlatform do BTG. Esse procedimento deve ser realizado por um administrador do Power Platform da Empresa.
@@ -26,6 +34,3 @@ Feito isso, será necessário autenticar os conectores com as credenciais do Off
 
 Após acessar a solução, você pode testar ou editar o app através desse ambiente. 
 
-## Apresentação
-
-A apresentação está no arquivo `OpenSolutions_Apresentacao.pdf`.
