@@ -1,0 +1,40 @@
+{
+  "62f076f2-f7af-47aa-b4f5-7aec85e25e1f": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "APIOF4",
+      "iconUri": "https://az787822.vo.msecnd.net/defaulticons/api-dedicated.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_apiof4-5f678e1db6cea5b67d-5fe23bec5e486dcd27",
+      "isCustomApiConnection": true,
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Hackaton-Fase4"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "62f076f2-f7af-47aa-b4f5-7aec85e25e1f"
+  },
+  "ee4292d1-126c-42af-85d5-0765b75c1f11": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "APIOF2",
+      "iconUri": "https://az787822.vo.msecnd.net/defaulticons/api-dedicated.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_apiof2-5f678e1db6cea5b67d-5fe23bec5e486dcd27"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Hackaton-Fase1,2,3,4-MocksCopy"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "ee4292d1-126c-42af-85d5-0765b75c1f11"
+  }
+}

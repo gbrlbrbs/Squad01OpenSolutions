@@ -1,0 +1,436 @@
+Extrato As screen:
+    OnVisible: |-
+        =Set(
+            varExpandir,
+            true
+        );
+        Set(
+            varRotacao,
+            0
+        );
+        Set(
+            varData,
+            Descending
+        );
+        If(
+            varSaldoContas >= 0,
+            Set(
+                varPopup_2,
+                true
+            ),
+            Set(
+                varPopup_2,
+                false
+            )
+        )
+
+    Image1_2 As image:
+        Height: =110
+        Image: ='Btg-logo-blue.svg'
+        Width: =202
+        X: =107
+        Y: =1
+        ZIndex: =3
+
+    Label1_5 As label:
+        Color: =RGBA(0, 30, 97, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =67
+        Size: =25
+        Text: ="Extratos e Cashbacks"
+        Width: =553
+        X: =107
+        Y: =124
+        ZIndex: =35
+
+    Button5_1 As button:
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 30, 97, 1)
+        Height: =65
+        Text: =""
+        Width: =1150
+        X: =107
+        Y: =194
+        ZIndex: =36
+
+    DatePicker1 As datepicker:
+        Height: =32
+        IconBackground: =White
+        IconFill: =Black
+        Width: =170
+        X: =1057
+        Y: =205
+        ZIndex: =38
+
+    Label3 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =32
+        Text: ="A partir de"
+        Width: =127
+        X: =911
+        Y: =205
+        ZIndex: =40
+
+    Icon1_6 As icon.Person:
+        Color: =RGBA(0, 30, 97, 1)
+        Height: =49
+        Icon: =Icon.Person
+        Width: =49
+        X: =1272
+        Y: =32
+        ZIndex: =42
+
+    Icon1_7 As icon.Person:
+        Color: =RGBA(0, 30, 97, 1)
+        Height: =49
+        Icon: =Icon.Bell
+        Width: =49
+        X: =1208
+        Y: =32
+        ZIndex: =43
+
+    Icon1_8 As icon.Person:
+        Color: =RGBA(0, 30, 97, 1)
+        Height: =49
+        Icon: =Icon.Money
+        Width: =49
+        X: =941
+        Y: =32
+        ZIndex: =44
+
+    Label1_4 As label:
+        Align: =Align.Center
+        Color: =RGBA(0, 30, 97, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =20
+        Text: ="R$ "&Round(varSaldo,1)
+        Width: =192
+        X: =1008
+        Y: =21
+        ZIndex: =45
+
+    Gallery1_1 As gallery.galleryVertical:
+        Fill: =RGBA(0, 13, 75, 1)
+        Height: =446
+        Items: =SortByColumns('Hackaton-Fase1,2,3,4-MocksCopy'.TransacoesDaConta("dc728105-74a5-47fe-b18c-23a6c855ed30","69665991-da55-4aac-a1f2-32d23daba8fe","595.080.896-84").data,"transactionDate",varData)
+        Layout: =Layout.Vertical
+        TemplateSize: =85
+        Width: =1150
+        X: =107
+        Y: =322
+        ZIndex: =46
+
+        Label5_5 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =76
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.organizationName
+            Width: =186
+            ZIndex: =1
+
+        Label5_6 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =69
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.amount
+            Width: =190
+            X: =563
+            ZIndex: =2
+
+        eolIcon_ret_2 As button:
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =64
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Text: =""
+            Width: =64
+            X: =1012
+            Y: =12
+            ZIndex: =3
+
+        Image5_4 As image:
+            Height: =51
+            Image: ='planet-earth'
+            OnSelect: =Navigate(Home,ScreenTransition.Fade)
+            Width: =64
+            X: =1012
+            Y: =18
+            ZIndex: =4
+
+        Label5_7 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =76
+            OnSelect: =Select(Parent)
+            Text: =Text(DateTimeValue(ThisItem.transactionDate),"dd-mm-yyyy")
+            Width: =190
+            X: =186
+            ZIndex: =5
+
+        Label5_8 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =69
+            OnSelect: =Select(Parent)
+            Text: =(ThisItem.amount)*0.015
+            Width: =191
+            X: =753
+            ZIndex: =7
+
+        Label5_10 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =76
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.transactionName
+            Width: =187
+            X: =376
+            ZIndex: =8
+
+    Rectangle4 As rectangle:
+        Fill: =RGBA(153, 160, 196, 1)
+        Height: =34
+        Width: =190
+        X: =107
+        Y: =287
+        ZIndex: =47
+
+    Rectangle4_1 As rectangle:
+        Fill: =RGBA(153, 160, 196, 1)
+        Height: =34
+        Width: =190
+        X: =297
+        Y: =287
+        ZIndex: =48
+
+    Rectangle4_2 As rectangle:
+        Fill: =RGBA(153, 160, 196, 1)
+        Height: =34
+        Width: =190
+        X: =487
+        Y: =287
+        ZIndex: =49
+
+    Rectangle4_3 As rectangle:
+        Fill: =RGBA(153, 160, 196, 1)
+        Height: =34
+        Width: =190
+        X: =677
+        Y: =287
+        ZIndex: =50
+
+    Rectangle4_4 As rectangle:
+        Fill: =RGBA(153, 160, 196, 1)
+        Height: =34
+        Width: =190
+        X: =867
+        Y: =287
+        ZIndex: =51
+
+    Rectangle4_5 As rectangle:
+        Fill: =RGBA(153, 160, 196, 1)
+        Height: =34
+        Width: =200
+        X: =1057
+        Y: =287
+        ZIndex: =52
+
+    Label4 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =34
+        Text: ="Conta"
+        Width: =190
+        X: =107
+        Y: =287
+        ZIndex: =53
+
+    Label4_5 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =34
+        Text: ="Data"
+        Width: =190
+        X: =297
+        Y: =287
+        ZIndex: =54
+
+    Label4_6 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =34
+        Text: ="Detalhes"
+        Width: =190
+        X: =487
+        Y: =287
+        ZIndex: =55
+
+    Label4_7 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =34
+        Text: ="Valor"
+        Width: =190
+        X: =677
+        Y: =287
+        ZIndex: =56
+
+    Label4_8 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =34
+        Text: ="Investback"
+        Width: =190
+        X: =867
+        Y: =287
+        ZIndex: =57
+
+    Label4_9 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =34
+        Text: ="ESG"
+        Width: =190
+        X: =1062
+        Y: =287
+        ZIndex: =58
+
+    Icon6_1 As icon.Filter:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =34
+        Icon: =Icon.Sort
+        OnSelect: =If(varData=Ascending,Set(varData,Descending),Set(varData,Ascending))
+        Tooltip: ="Classificar por data"
+        Width: =47
+        X: =130
+        Y: =209
+        ZIndex: =59
+
+    Menu_2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =66
+
+        Icon9_10 As icon.Home:
+            Height: =46
+            Icon: =Icon.Home
+            OnSelect: =Navigate(Home,ScreenTransition.Fade)
+            Visible: =varExpandir
+            Y: =124
+            ZIndex: =26
+
+        Icon9_11 As icon.Home:
+            Height: =46
+            Icon: =Icon.Money
+            OnSelect: =Navigate(Investimentos,ScreenTransition.Fade)
+            Visible: =varExpandir
+            Y: =191
+            ZIndex: =27
+
+        Icon9_12 As icon.Home:
+            Height: =46
+            Icon: =Icon.DocumentWithContent
+            Visible: =varExpandir
+            Y: =257
+            ZIndex: =28
+
+        Icon10_2 As icon.VerticalLine:
+            DisplayMode: =DisplayMode.View
+            Height: =41
+            Icon: =Icon.VerticalLine
+            Visible: =varExpandir
+            Width: =10
+            Y: =259
+            ZIndex: =33
+
+        Icon11_2 As icon.Hamburger:
+            Height: =44
+            Icon: =Icon.Hamburger
+            OnSelect: =If(varExpandir,Set(varExpandir,false),Set(varExpandir,true))
+            Rotation: =If(varExpandir,0,90)
+            Width: =37
+            X: =13
+            Y: =32
+            ZIndex: =34
+
+    PopUp_2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =66
+
+        Image3 As image:
+            Height: =276
+            Image: ='66,7%'
+            Visible: =varPopup_2
+            Width: =455
+            X: =898
+            Y: =435
+            ZIndex: =60
+
+        Button6_2 As button:
+            Fill: =RGBA(0, 0, 0, 0.17)
+            Height: =767
+            HoverFill: =RGBA(0, 0, 0, 0.16)
+            OnSelect: =Set(varPopup_2,false)
+            PressedFill: =Transparent
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Text: =""
+            Visible: =varPopup_2
+            Width: =1366
+            Y: =1
+            ZIndex: =61
+
+        Label4_10 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =123
+            Size: =17
+            Text: ="Verificamos que você possui um saldo parado na sua conta há alguns dias. Que tal trazer esse dinheiro pra cá e investir em um fundo com uma taxa especial ?"
+            Visible: =varPopup_2
+            Width: =410
+            X: =920
+            Y: =458
+            ZIndex: =64
+
+        Button7_2 As button:
+            Fill: =RGBA(89, 88, 88, 1)
+            Height: =48
+            HoverFill: =RGBA(116, 116, 116, 1)
+            OnSelect: =Navigate(Propostas,ScreenTransition.Fade)
+            PressedColor: =
+            PressedFill: =RGBA(116, 116, 116, 1)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Text: ="Trazer dinheiro de outro banco"
+            Visible: =varPopup_2
+            Width: =201
+            X: =1120
+            Y: =593
+            ZIndex: =65
+
