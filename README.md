@@ -25,3 +25,7 @@ Feito isso, será necessário autenticar os conectores com as credenciais do Off
 ![reproduzir](images/004.png "Reproduzir")
 
 Após acessar a solução, você pode testar ou editar o app através desse ambiente. 
+
+## Apresentação
+
+A apresentação está no arquivo `OpenSolutions_Apresentacao.pdf`.
